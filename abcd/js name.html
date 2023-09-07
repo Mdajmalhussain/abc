@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="name" id="name" >
+    <button onclick="greet()">
+        Greet
+      </button>
+      <div class="greet">
+
+      </div>
+      <h1>todays date</h1>
+      <h1 id="ress">
+
+    </h1>
+    
+  <button onclick="getDate()">Date</button>    
+  <br>
+  <h1><button onclick="getDate()" id="aj">date</button></h1>
+ 
+</body>
+<script type="text/javascript">
+    function greet(){
+        var name=document.getElementById('name').value;
+        var string=" Hello " + name;
+        document.getElementsByClassName('greet')[0].innerHTML=string;
+    }
+var date = new Date();
+function getDate(){
+    document.getElementById('ress').innerText = date;
+}
+
+function Year(){
+    document.getElementById('yar').innerText=date.getFullYear;
+}
+function getDate(){
+    document.getElementById('aj').innerText=date;
+}
+    
+    
+</script>
+</html>
